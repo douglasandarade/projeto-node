@@ -19,19 +19,32 @@
         "prettier"
     ],
     "rules": {
-        "import/extensions": [
-            "error",
-            "ignorePackages",
-            {
-              "ts": "never"
-            }
-          ],
-          "prettier/prettier": "error",
-          "class-methods-use-this":"off",
-          "camelcase": "off",
-          "no-unused-vars": ["error", {
-            "argsIgnorePattern": "_"
-          }]
+      "prettier/prettier": "error",
+      "no-useless-constructor": "off",
+      "no-unused-vars": "off",
+      "camelcase": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ],
+      "@typescript-eslint/naming-convention": [
+        "error",
+        {
+          "selector": "interface",
+          "prefix": ["I"],
+          "format": ["PascalCase"]
+        }
+      ],
+      "class-methods-use-this":"off",
+      "import/extensions": [
+        "error",
+        "ignorePackages",
+        {
+          "ts": "never"
+        }
+      ]
     },
     "settings": {
         "import/resolver": {
