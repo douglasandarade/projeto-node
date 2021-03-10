@@ -2,3 +2,5 @@ node_modules/
 tmp/*
 !tmp/uploads/.gitkeep
 coverage
+aula
+README.md
