@@ -33,6 +33,7 @@ describe('Update avatar user', () => {
 
     expect(user.avatar).toBe('avatar.jpg');
   });
+
   it('should be able to create a new avatar', async () => {
     await expect(
       updateUserAvatar.execute({
